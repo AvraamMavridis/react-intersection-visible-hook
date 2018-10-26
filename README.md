@@ -2,6 +2,8 @@
 
 React hook to track the visibility of a functional component based on IntersectionVisible Observer.
 
+*Demo and tests are coming*
+
 ### How to use it
 
 ```js
