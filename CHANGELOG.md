@@ -1,3 +1,11 @@
+#### 1.2.2 (2018-10-26)
+
+##### Chores
+
+*  Update Readme ([d735eea8](https://github.com/AvraamMavridis/react-intersection-visible-hook/commit/d735eea8feda94a605532c8551c5d27592662143))
+*  Add gif ([dad803a8](https://github.com/AvraamMavridis/react-intersection-visible-hook/commit/dad803a80a1bdfe8ea6d351b5b3dc5748f08ef5f))
+*  Update Readme ([31eea753](https://github.com/AvraamMavridis/react-intersection-visible-hook/commit/31eea7534ae2accf4b36ad4f5957d7fa64451070))
+
 #### 1.2.1 (2018-10-26)
 
 ##### Chores
