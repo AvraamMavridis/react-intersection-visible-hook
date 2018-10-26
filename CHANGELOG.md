@@ -1,3 +1,9 @@
+#### 1.2.3 (2018-10-26)
+
+##### Tests
+
+*  Add a test ([e877b7cf](https://github.com/AvraamMavridis/react-intersection-visible-hook/commit/e877b7cf3348dd42c4e0135db6fd7ff90fff103f))
+
 #### 1.2.2 (2018-10-26)
 
 ##### Chores
