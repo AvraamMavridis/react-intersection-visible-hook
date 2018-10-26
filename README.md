@@ -33,6 +33,7 @@ function App() {
   return (
     <div className="App" ref={nodeRef}>
       <h1>Hello</h1>
+      <h2>{visibility.isIntersecting ?  'Component is visible' : 'Component is hidden' }</h2>
     </div>
   );
 }
