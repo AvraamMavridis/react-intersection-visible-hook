@@ -4,6 +4,10 @@ React hook to track the visibility of a functional component based on Intersecti
 
 *Demo and tests are coming*
 
+```
+import useVisibility from 'react-intersection-visible-hook'
+```
+
 ### How to use it
 
 ```js
