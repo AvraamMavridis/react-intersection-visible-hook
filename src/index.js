@@ -1,3 +1,5 @@
+import React, { useState, useRef, useEffect } from 'react';
+
 /**
  * Visibility hook for functional components
  *
@@ -6,7 +8,7 @@
  * @param {Object} [options={}]
  * @returns {object} visibility
  */
-export function useVisibility(node, options = {}) {
+export default function useVisibility(node, options = {}) {
 
   const [visible, setVisibilty] = useState({});
   const isIntersecting = useRef();
