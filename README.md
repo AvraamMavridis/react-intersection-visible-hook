@@ -2,6 +2,10 @@
 
 React hook to track the visibility of a functional component based on IntersectionVisible Observer.
 
+In the following example we changed the background color of the body depending on the visibility of the blue box.
+
+<img src="https://github.com/AvraamMavridis/react-intersection-visible-hook/blob/master/demo_gif.gif?raw=true" />
+
 *Demo and tests are coming*
 
 ```
