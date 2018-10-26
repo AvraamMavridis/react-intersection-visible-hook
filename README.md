@@ -1,5 +1,55 @@
 # react-intersection-visible-hook
 
+React hook to track the visibility of a functional component based on IntersectionVisible Observer.
+
+### How to use it
+
+```js
+function App() {
+  const nodeRef = useRef(null);
+  const visibility = useVisibility(nodeRef);
+
+  return (
+    <div className="App" ref={nodeRef}>
+      <h1>Hello</h1>
+    </div>
+  );
+}
+```
+
+##### With options
+
+```js
+const options = {
+  root: document.querySelector('#scrollArea'),
+  rootMargin: '0px',
+  threshold: 1.0
+}
+
+function App() {
+  const nodeRef = useRef(null);
+  const visibility = useVisibility(nodeRef, options);
+
+  return (
+    <div className="App" ref={nodeRef}>
+      <h1>Hello</h1>
+    </div>
+  );
+}
+```
+
+The `visibility` object contains
+
+```
+boundingClientRect
+intersectionRatio
+intersectionRect
+isIntersecting
+rootBounds
+target
+time
+```
+
 
 ### Contribute
 
