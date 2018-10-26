@@ -1,13 +1,13 @@
 {
   "name": "react-intersection-visible-hook",
-  "version": "0.0.1",
-  "homepage": "https://github.com/AvraamMavridis/react-intersection-visible",
+  "version": "1.0.0",
+  "homepage": "https://github.com/AvraamMavridis/react-intersection-visible-hook",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AvraamMavridis/react-intersection-visible"
+    "url": "https://github.com/AvraamMavridis/react-intersection-visible-hook"
   },
   "author": "Avraam Mavridis <avr.mav@gmail.com>",
-  "description": "react intersection visible",
+  "description": "react intersection visible hook for react",
   "scripts": {
     "start": "styleguidist server",
     "build": "styleguidist build",
@@ -40,8 +40,8 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
