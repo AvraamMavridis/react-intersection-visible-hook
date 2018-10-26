@@ -1,10 +1,23 @@
+/**
+ * Visibility hook for functional components
+ *
+ * @export
+ * @param {DOMNode reference} node
+ * @param {Object} [options={}]
+ * @returns {object} visibility
+ */
 export function useVisibility(node, options = {}) {
 
-  const [visible, setVisibilty] = useState(false);
+  const [visible, setVisibilty] = useState({});
+  const isIntersecting = useRef();
 
   const handleObserverUpdate = (entries) => {
-    console.log(entries);
-    // setVisibilty(entries)
+    const ent = entries[0];
+
+    if(isIntersecting.current !== ent.isIntersecting){
+      setVisibilty(ent);
+      isIntersecting.current = ent.isIntersecting;
+    } 
   }
 
   const observer = new IntersectionObserver(handleObserverUpdate, options)
@@ -15,7 +28,7 @@ export function useVisibility(node, options = {}) {
     }
 
     return function cleanup() {
-      observer.unobserve();
+      observer.unobserve(node.current);
     };
   });
 
