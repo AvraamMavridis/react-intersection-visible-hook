@@ -1,3 +1,9 @@
+#### 1.2.1 (2018-10-26)
+
+##### Chores
+
+*  Readme update ([a7e81779](https://github.com/AvraamMavridis/react-intersection-visible-hook/commit/a7e8177982bdd7db58c15573f3fd114fac4195fd))
+
 ### 1.2.0 (2018-10-26)
 
 ##### Chores
