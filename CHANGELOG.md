@@ -1,3 +1,9 @@
+### 1.2.0 (2018-10-26)
+
+##### Chores
+
+*  Update depedencies ([1d5aa2a2](https://github.com/AvraamMavridis/react-intersection-visible-hook/commit/1d5aa2a20f83a782d1fc8bc4a94c066b1876e709))
+
 ### 1.1.0 (2018-10-26)
 
 ##### Chores
