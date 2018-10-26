@@ -1,29 +1,20 @@
-import React, { useRef } from 'react';
-import { mount } from 'enzyme';
-import useVisibility from '../src';
+const test = require('ava');
+const { createElement: h } = require('react');
+const ReactTestRenderer = require('react-test-renderer');
+const sinon = require('sinon');
+const useVisibilty = require('../src/index');
 
-// To be added, currently React reports `Invariant Violation: Hooks can only be called inside the body of a function component.`
+function render(val) {
+  return ReactTestRenderer.create(val).toJSON();
+}
 
-// function App() {
-//   const nodeRef = useRef(null);
-//   const visibility = useVisibility();
+test(t => {
+  const ref = { current: 'ref' };
+  global.IntersectionObserver = sinon.spy();
+  function Component() {
+    return JSON.stringify(useVisibilty(ref));
+  }
+  render(h(Component));
 
-//   return (
-//     <div className="App">
-//       <h1>Hello</h1>
-//       <h2>{visibility.isIntersecting ? 'visible' : 'not visible' }</h2>
-//     </div>
-//   );
-// }
-
-// describe('useVisibility', () => {
-//   let wrapper;
-
-//   beforeEach(() => {
-//     wrapper = mount(<App />);
-//   });
-
-//   it('should return state', () => {
-//     expect(App).toBe(3);
-//   });
-// });
+  t.true(global.IntersectionObserver.called);
+});
