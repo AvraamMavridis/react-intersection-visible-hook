@@ -25,12 +25,16 @@ function useVisibility(node, options = {}) {
   const observer = new IntersectionObserver(handleObserverUpdate, options);
 
   useEffect(() => {
-    if (node.current) {
-      observer.observe(node.current);
+    const element = node.current;
+
+    if (!element) {
+      return;
     }
 
+    observer.observe(element);
+
     return function cleanup() {
-      observer.unobserve(node.current);
+      observer.unobserve(element);
     };
   });
 
