@@ -30,16 +30,14 @@ function useVisibility(node, options = EMPTY) {
   );
 
   useEffect(() => {
-    if (!node.current) {
-      return;
+    if (node.current) {
+      observer.observe(node.current);
     }
-    
-    observer.observe(node.current);
 
     return function cleanup() {
       observer.unobserve(node.current);
     };
-  }, [node.current, observer]);
+  });
 
   return visible;
 }
