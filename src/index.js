@@ -1,4 +1,4 @@
-const { useRef, useState, useEffect } = require('react');
+const { useRef, useState, useEffect, useMemo } = require('react');
 require('intersection-observer');
 
 /**
@@ -9,7 +9,9 @@ require('intersection-observer');
  * @param {Object} [options={}]
  * @returns {object} visibility
  */
-function useVisibility(node, options = {}) {
+const EMPTY = {}
+
+function useVisibility(node, options = EMPTY) {
   const [ visible, setVisibilty ] = useState({});
   const isIntersecting = useRef();
 
@@ -22,17 +24,22 @@ function useVisibility(node, options = {}) {
     }
   };
 
-  const observer = new IntersectionObserver(handleObserverUpdate, options);
+  const observer = useMemo(
+    () => new IntersectionObserver(handleObserverUpdate, options),
+    [options]
+  );
 
   useEffect(() => {
-    if (node.current) {
-      observer.observe(node.current);
+    if (!node.current) {
+      return;
     }
+    
+    observer.observe(node.current);
 
     return function cleanup() {
       observer.unobserve(node.current);
     };
-  });
+  }, [node.current, observer]);
 
   return visible;
 }
