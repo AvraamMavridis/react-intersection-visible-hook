@@ -1,3 +1,13 @@
+### 1.4.0 (2018-10-30)
+
+##### Chores
+
+*  Update package-lock ([ceb81aaf](https://github.com/AvraamMavridis/react-intersection-visible-hook/commit/ceb81aaf71cb075e143b38e6a126e8a76f579ee8))
+
+##### Bug Fixes
+
+*  Fix issues with cleanup being called either without node or with wrong node ([54f5bc7f](https://github.com/AvraamMavridis/react-intersection-visible-hook/commit/54f5bc7f3754c88dec2da466d9211f08a517a107))
+
 ### 1.3.0 (2018-10-30)
 
 ##### Chores
