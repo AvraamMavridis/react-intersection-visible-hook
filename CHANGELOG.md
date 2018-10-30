@@ -1,3 +1,9 @@
+#### 1.4.1 (2018-10-30)
+
+##### Chores
+
+*  Update .npmignore .gitignore ([c904853e](https://github.com/AvraamMavridis/react-intersection-visible-hook/commit/c904853e7b6505fe415c00456fa85a6139448314))
+
 ### 1.4.0 (2018-10-30)
 
 ##### Chores
