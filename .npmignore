@@ -3,4 +3,8 @@ tests/
 .eslintrc
 jest.*
 styleguide.config.js
-travis.yml
+.travis.yml
+demo_gif.gif
+index.html
+styles.css
+.vscode/settings.json
