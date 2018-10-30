@@ -1,3 +1,9 @@
+#### 1.4.2 (2018-10-30)
+
+##### Chores
+
+*  Delete unessecary files ([3ebd1412](https://github.com/AvraamMavridis/react-intersection-visible-hook/commit/3ebd14121486f2499567dbad8c9ff24251a82cb2))
+
 #### 1.4.1 (2018-10-30)
 
 ##### Chores
